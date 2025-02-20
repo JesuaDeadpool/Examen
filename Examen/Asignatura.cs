@@ -17,20 +17,20 @@ namespace Examen
 
         public double CalcularNotaFinal()
         {
-            return (N1 + N2 + N3) / 3; 
+            return N1 + N2 + N3; 
         }
 
         public double CalcularNotaFinal(double nota1, double nota2, double nota3)
         {
-            return (nota1 + nota2 + nota3) / 3; 
+            return nota1 + nota2 + nota3; 
         }
 
         public void Imprimir()
         {
             Console.WriteLine();
-            Console.WriteLine($"Nombre del estudiante : {NombreAlumno}\n Numero Cuenta {NumeroCuenta}\n  Correo Electrónico {Email} \nNombre Clase: {NombreAsignatura} \nHorario: {Horario}\nNombre del docente : {NombreDocente}");
-            Console.WriteLine($"Nota Final : {MensajeNotaFinal(CalcularNotaFinal())}");
-            Console.WriteLine($"Nota Final : {MensajeNotaFinal(CalcularNotaFinal())}"); 
+            Console.WriteLine($"Nombre del estudiante : {NombreAlumno}\nNumero Cuenta {NumeroCuenta}\nCorreo Electrónico {Email} \nNombre Clase: {NombreAsignatura} \nHorario: {Horario}\nNombre del docente : {NombreDocente}");
+            Console.WriteLine($"Nota Final :{CalcularNotaFinal()}% - {MensajeNotaFinal(CalcularNotaFinal())}");
+            Console.WriteLine($"Nota Final :{CalcularNotaFinal()}% - {MensajeNotaFinal(CalcularNotaFinal())}"); 
             
         }
 
