@@ -30,7 +30,7 @@ try
 
     if (nota1 > 30 || nota2 > 30)
     {
-        Console.WriteLine($"La nota que ingreso {nota1} del primer parcial sobrepasa del 30%");
+        Console.WriteLine($"La nota que ingreso del primer parcial o segundo parcial sobrepasa del 30%");
     }
     else if (nota3 > 40)
     {
@@ -45,6 +45,7 @@ try
         asignatura.CalcularNotaFinal(nota1, nota2, nota3);
     
     }
+
 
     asignatura.Imprimir();
 
