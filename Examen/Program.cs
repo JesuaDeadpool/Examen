@@ -30,12 +30,14 @@ try
 
     if (nota1 > 30 || nota2 > 30)
     {
-        Console.WriteLine($"La nota que ingreso del primer parcial o segundo parcial sobrepasa del 30%");
+        Console.WriteLine($"Las notas que ingreso {nota1} {nota2} del primer parcial o segundo parcial sobrepasa del 30%");
+        Environment.Exit(0);
     }
     else if (nota3 > 40)
     {
         Console.WriteLine($"La nota que ingreso {nota3} del primer parcial sobrepasa del 40%");
-
+        Environment.Exit(0);
+        // Environment.Exit(int 0 ) -> es para terminar el programa inmediatamente -Jesua Pavon
     }
     else
     {
